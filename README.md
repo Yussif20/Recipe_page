@@ -12,8 +12,9 @@ a simple recipe page which I used html and css to build
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Yussif20/Recipte_page)
-- Live Site URL: [Add live site URL here](https://recipe-page-dazai.netlify.app/)
+<!-- - Solution URL: [](https://github.com/Yussif20/Recipte_page) -->
+
+- Live Site URL: [recipe-page.netlify.app](https://recipe-page-dazai.netlify.app/)
 
 ### Built with
 
