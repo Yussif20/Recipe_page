@@ -1,0 +1,137 @@
+/* General styles */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit", sans-serif;
+  color: hsl(24, 5%, 18%);
+}
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+}
+img {
+  width: 100%;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+section {
+  padding: 24px 0;
+  margin: 16px 0;
+  border-bottom: 1px solid hsl(14, 45%, 80%);
+}
+h2 {
+  color: hsl(14, 45%, 36%);
+}
+.container {
+  margin: 20px auto;
+  padding: 32px;
+  max-width: 60%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+}
+/* Header styles */
+.header-image img {
+  border-radius: 12px;
+}
+.header-text h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 16px 0;
+}
+.header-info {
+  padding: 12px;
+  margin: 16px 0;
+  border-radius: 12px;
+  background-color: hsl(332, 51%, 95%);
+}
+
+.header-info h3 {
+  color: hsl(332, 51%, 32%);
+}
+.header-info li {
+  position: relative;
+  margin: 22px 32px;
+}
+.header-info li::before {
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  content: "";
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: hsl(332, 51%, 32%);
+}
+/* ingredients-section styles  */
+.ingredients-section ul {
+  margin: 24px;
+}
+.ingredients-section li {
+  position: relative;
+  margin: 12px;
+}
+.ingredients-section li::before {
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  content: "";
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: hsl(14, 45%, 36%);
+}
+
+/* instructions-section styles  */
+ol {
+  margin: 24px;
+  list-style: none;
+}
+
+ol li {
+  margin: 16px 0;
+  counter-increment: list-counter;
+  position: relative;
+}
+
+ol li::before {
+  content: counter(list-counter) ". ";
+  color: hsl(14, 45%, 36%);
+  position: absolute;
+  left: -16px;
+}
+/* nutrition-section styles  */
+.nutrition-section p {
+  margin: 24px 0;
+}
+.nutrition-list p:not(:last-child) {
+  position: relative;
+  padding: 6px 0;
+  margin: 24px 0;
+  border-bottom: 1px solid hsl(14, 45%, 80%);
+}
+.nutrition-list span {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+}
+
+/* Attribution styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
