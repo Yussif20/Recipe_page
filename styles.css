@@ -1,12 +1,22 @@
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
 /* General styles */
 * {
   padding: 0;
   margin: 0;
 }
 body {
-  background-color: hsl(30, 54%, 90%);
+  background-color: var(--eggshell);
   font-family: "Outfit", sans-serif;
-  color: hsl(24, 5%, 18%);
+  color: var(--dark-charcoal);
 }
 h1,
 h2 {
@@ -28,16 +38,16 @@ ul {
 section {
   padding: 24px 0;
   margin: 16px 0;
-  border-bottom: 1px solid hsl(14, 45%, 80%);
+  border-bottom: 1px solid var(--light-grey);
 }
 h2 {
-  color: hsl(14, 45%, 36%);
+  color: var(--nutmeg);
 }
 .container {
   margin: 20px auto;
   padding: 32px;
   max-width: 60%;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--white);
   border-radius: 12px;
 }
 /* Header styles */
@@ -57,7 +67,7 @@ h2 {
 }
 
 .header-info h3 {
-  color: hsl(332, 51%, 32%);
+  color: var(--dark-raspberry);
 }
 .header-info li {
   position: relative;
@@ -71,7 +81,7 @@ h2 {
   height: 6px;
   width: 6px;
   border-radius: 50%;
-  background-color: hsl(332, 51%, 32%);
+  background-color: var(--dark-raspberry);
 }
 /* ingredients-section styles  */
 .ingredients-section ul {
@@ -89,7 +99,7 @@ h2 {
   height: 6px;
   width: 6px;
   border-radius: 50%;
-  background-color: hsl(14, 45%, 36%);
+  background-color: var(--nutmeg);
 }
 
 /* instructions-section styles  */
@@ -106,7 +116,7 @@ ol li {
 
 ol li::before {
   content: counter(list-counter) ". ";
-  color: hsl(14, 45%, 36%);
+  color: var(--nutmeg);
   position: absolute;
   left: -16px;
 }
@@ -121,7 +131,7 @@ ol li::before {
   border-bottom: 1px solid hsl(14, 45%, 80%);
 }
 .nutrition-list span {
-  color: hsl(14, 45%, 36%);
+  color: var(--nutmeg);
   font-weight: 700;
   position: absolute;
   left: 50%;
